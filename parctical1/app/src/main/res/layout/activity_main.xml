@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <!--BLACK TOP-->
     <TextView
         android:layout_width="match_parent"
@@ -28,8 +29,54 @@
         android:textColor="#000000"
         android:gravity="center" />
 
+    <!--four colour Textview-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="This"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="is"
+            android:background="#0000FF"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="my"
+            android:background="#673AB7"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="first"
+            android:background="FFFF00"
+            android:textColor="#000000"
+            android:gravity="center"/>
 
 
-        >
+
+
+
+
+
 
 </LinearLayout>
