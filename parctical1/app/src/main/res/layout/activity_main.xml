@@ -14,13 +14,20 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="Lab 1"
-        android:layout_gravity="center"
         android:background="@color/black"
         android:textColor="#FFFFFF"
-         />
+        android:gravity="center"/>
 
     <!--layout1-->
-    <
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:text="Responsive Layout 1"
+        android:textColor="#000000"
+        android:gravity="center" />
+
 
 
         >
