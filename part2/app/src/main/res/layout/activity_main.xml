@@ -11,7 +11,6 @@
         android:id="@+id/titleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:text="Lab 1"
         android:background="#000000"
         android:textColor="#FFFFFF"
@@ -24,57 +23,85 @@
 
     <!--layout1-->
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/layoutText"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:background="#FFFFFF"
         android:text="Responsive Layout 1"
         android:textColor="#000000"
-        android:gravity="center" />
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toTopOf="@+id/colorLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="1"/>
 
     <!--four colour Textview-->
-    <LinearLayout
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/colorLayout"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="1"
+        >
 
         <TextView
+            android:id="@+id/thisText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="This"
             android:background="#FF0000"
             android:textColor="#FFFFFF"
-            android:gravity="center"/>
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/isText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"/>
 
         <TextView
+            android:id="@+id/isText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="is"
             android:background="#0000FF"
             android:textColor="#FFFFFF"
-            android:gravity="center"/>
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/thisText"
+            app:layout_constraintEnd_toStartOf="@+id/myText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            />
 
         <TextView
+            android:id="@+id/isText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="my"
             android:background="#673AB7"
             android:textColor="#FFFFFF"
-            android:gravity="center"/>
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/isText"
+            app:layout_constraintEnd_toStartOf="@+id/firstText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"/>
 
         <TextView
+            android:id="@+id/firstText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="first"
             android:background="#FFFF00"
             android:textColor="#000000"
-            android:gravity="center"/>
-    </LinearLayout>
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/myText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
@@ -90,7 +117,7 @@
 
 
     <!--BOTTOM button-->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -108,7 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Cancel"/>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
